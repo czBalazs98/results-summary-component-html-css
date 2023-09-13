@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content-container mx-auto">
+        <div class="result-container content text-center w-full">
+          <p class="text-light-lavender font-18px font-bold">Your Result</p>
+
+          <div class="circle">
+            <h1 class="text-white mt-0 mb-5px font-bold">76</h1>
+            <p class="text-light-lavender mt-0 mb-0">of 100</p>
+          </div>
+
+          <h2 class="text-white">Great</h2>
+          <p class="text-light-lavender">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <div class="summary-container content w-full">
+          <p class="font-bold font-18px">Summary</p>
+          <div id="list" class="flex-grow">
+            <div class="list-item bg-light-red-lighter">
+              <img src="./assets/images/icon-reaction.svg">
+              <p class="flex-1-1-auto text-light-red">Reaction</p>
+              <p>80&nbsp;<p class="text-dark-gray-blue-lighter">/ 100</p></p>
+            </div>
+
+            <div class="list-item bg-orangey-yellow-lighter">
+              <img src="./assets/images/icon-memory.svg">
+              <p class="flex-1-1-auto text-orangey-yellow">Memory</p>
+              <p >92&nbsp;<p class="text-dark-gray-blue-lighter">/ 100</p></p>
+            </div>
+
+            <div class="list-item bg-green-teal-lighter">
+              <img src="./assets/images/icon-verbal.svg">
+              <p class="flex-1-1-auto text-green-teal">Verbal</p>
+              <p>61&nbsp;<p class="text-dark-gray-blue-lighter">/ 100</p></p>
+            </div>
+
+            <div class="list-item bg-cobalt-blue-lighter">
+              <img src="./assets/images/icon-visual.svg">
+              <p class="flex-1-1-auto text-cobalt-blue">Visual</p>
+              <p>72&nbsp;<p class="text-dark-gray-blue-lighter">/ 100</p></p>
+            </div>
+          </div>
+
+          <button class="continue-button">Continue</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/czBalazs98" target="_blank">Balazs Czmarko</a>.
+    </div>
+  </body>
+</html>

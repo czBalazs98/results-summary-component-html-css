@@ -1,0 +1,228 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: HankenGrotesk;
+}
+
+p {
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px -12px hsl(241, 100%, 89%);
+}
+
+.result-container {
+  border-radius: 0.75rem;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.list-item.p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-light-lavender {
+  color: hsl(241, 100%, 89%);
+}
+
+.text-light-red {
+  color: hsl(0, 100%, 67%);
+}
+
+.text-orangey-yellow {
+  color: hsl(39, 100%, 56%);
+}
+
+.text-green-teal {
+  color: hsl(166, 100%, 37%);
+}
+
+.text-cobalt-blue {
+  color: hsl(234, 85%, 45%);
+}
+
+.text-dark-gray-blue-lighter {
+  color: hsl(224, 30%, 67%);
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mb-5px {
+  margin-bottom: 5px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-5px {
+  margin-top: 5px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+.font-medium {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 500;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+.continue-button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 2rem;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.continue-button:hover {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
+}
+
+#list p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 800;
+}
+
+#list img {
+  margin-right: 0.25rem;
+}
+
+.flex-1-1-auto {
+  flex: 1 1 auto;
+}
+
+.attribution {
+  padding: 0.25rem;
+  bottom: 0px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bg-light-red-lighter {
+  background-color: hsl(0, 100%, 97%);
+}
+
+.bg-orangey-yellow-lighter {
+  background-color: hsl(39, 100%, 96%);
+}
+
+.bg-green-teal-lighter {
+  background-color: hsl(166, 100%, 97%);
+}
+
+.bg-cobalt-blue-lighter {
+  background-color: hsl(234, 85%, 95%);
+}
+
+/*# sourceMappingURL=styles.css.map */

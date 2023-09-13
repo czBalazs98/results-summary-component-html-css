@@ -5,6 +5,8 @@
     src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
+// base elements' styles
+
 body {
     height: 100vh;
     display: flex;
@@ -25,6 +27,9 @@ h2 {
     font-size: 24px;
 }
 
+
+// custom classes
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -42,18 +47,12 @@ h2 {
 .result-container {
     border-radius: 0.75rem;
     background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+    padding: 2rem;
 }
 
 .summary-container {
     display: flex;
     flex-direction: column;
-}
-
-.flex-grow {
-    flex-grow: 1;
-}
-
-.content {
     padding: 2rem;
 }
 
@@ -77,9 +76,47 @@ h2 {
     border-radius: 0.75rem;
 }
 
-.list-item.p {
+.continue-button {
+    color: $white;
+    background-color: $dark-gray-blue;
+    border-radius: 2rem;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    padding: 0.75rem
+}
+
+.continue-button:hover {
+    background-color: $light-royal-blue;
+    cursor: pointer;
+}
+
+#list p {
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: 800;
+}
+
+#list img {
+    margin-right: 0.25rem;
+}
+
+.attribution { 
+    padding: 0.25rem;
+    bottom: 0px;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+// common styles
+
+.flex-grow {
+    flex-grow: 1;
 }
 
 .text-center {
@@ -114,20 +151,8 @@ h2 {
     color: $dark-gray-blue-lighter;
 }
 
-.w-50 {
-    width: 50%;
-}
-
 .w-full {
     width: 100%;
-}
-
-.h-50 {
-    height: 50%;
-}
-
-.h-full {
-    height: 100%;
 }
 
 .mx-auto {
@@ -135,21 +160,12 @@ h2 {
     margin-right: auto;
 }
 
-.my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.mb-5px {
-    margin-bottom: 5px;
+.mb-sm {
+    margin-bottom: 0.25rem;
 }
 
 .mb-0 {
     margin-bottom: 0;
-}
-
-.mt-5px {
-    margin-top: 5px;
 }
 
 .mt-0 {
@@ -160,56 +176,8 @@ h2 {
     font-weight: 800;
 }
 
-.font-medium {
-    font-weight: 700;
-}
-
-.font-light {
-    font-weight: 500;
-}
-
 .font-18px {
     font-size: 18px;
-}
-
-.continue-button {
-    color: $white;
-    background-color: $dark-gray-blue;
-    border-radius: 2rem;
-    border: none;
-    font-size: 15px;
-    width: 100%;
-    padding: 0.75rem
-}
-
-.continue-button:hover {
-    background-color: $light-royal-blue;
-    cursor: pointer;
-}
-
-#list p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 800;
-}
-
-#list img {
-    margin-right: 0.25rem;
-}
-
-.flex-1-1-auto {
-    flex: 1 1 auto;
-}
-
-.attribution { 
-    padding: 0.25rem;
-    bottom: 0px;
-    font-size: 11px; 
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%); 
 }
 
 .bg-light-red-lighter {

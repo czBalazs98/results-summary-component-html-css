@@ -31,8 +31,6 @@ h2 {
 // custom classes
 
 .main-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 }
@@ -47,13 +45,28 @@ h2 {
 .result-container {
     border-radius: 0.75rem;
     background-image: linear-gradient($light-slate-blue, $light-royal-blue);
-    padding: 2rem;
 }
 
-.summary-container {
+.main-container, .summary-container {
     display: flex;
     flex-direction: column;
+}
+
+.result-container, .summary-container {
     padding: 2rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  
+    .result-container,
+    .summary-container {
+        width: auto;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
 }
 
 .circle {

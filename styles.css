@@ -23,8 +23,6 @@ h2 {
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   flex-grow: 1;
 }
@@ -39,15 +37,27 @@ h2 {
 .result-container {
   border-radius: 0.75rem;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  padding: 2rem;
 }
 
-.summary-container {
+.main-container, .summary-container {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 
+.result-container, .summary-container {
+  padding: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .result-container,
+  .summary-container {
+    width: auto;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+}
 .circle {
   display: flex;
   flex-direction: column;
